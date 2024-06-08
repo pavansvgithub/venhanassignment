@@ -1,0 +1,11 @@
+def frequency_of_each_char(string):
+    dict_a = {}
+    for i in string:
+        if i in dict_a:
+            dict_a[i] += 1 
+        else:
+            dict_a[i] = 1 
+    return dict_a
+string = input()
+result = frequency_of_each_char(string)
+print(result)
